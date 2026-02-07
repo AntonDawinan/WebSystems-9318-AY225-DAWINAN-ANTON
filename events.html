@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - JPCS</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/events.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">💻</span>
+                <span class="brand-name">JPCS</span>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="officers.html">Officers</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="membership.html">Join Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Events & Activities</h1>
+            <p>Explore our upcoming and past events</p>
+        </div>
+    </section>
+
+    <section class="events-section">
+        <div class="container">
+            <div class="events-controls">
+                <div class="filter-section">
+                    <h3>Filter Events</h3>
+                    <div class="filter-group">
+                        <label>Category:</label>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-category="all">All Events</button>
+                            <button class="filter-btn" data-category="workshop">Workshops</button>
+                            <button class="filter-btn" data-category="seminar">Seminars</button>
+                            <button class="filter-btn" data-category="competition">Competitions</button>
+                            <button class="filter-btn" data-category="social">Social</button>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label>Time:</label>
+                        <div class="filter-buttons">
+                            <button class="time-filter-btn active" data-time="all">All</button>
+                            <button class="time-filter-btn" data-time="upcoming">Upcoming</button>
+                            <button class="time-filter-btn" data-time="past">Past</button>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label>Search:</label>
+                        <input type="text" id="searchInput" placeholder="Search events..." class="search-input">
+                    </div>
+                </div>
+            </div>
+
+            <div class="events-grid" id="eventsGrid">
+                <!-- Events will be dynamically loaded -->
+            </div>
+
+            <div id="noEvents" class="no-events" style="display: none;">
+                <p>No events found matching your criteria.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details Modal -->
+    <div class="modal" id="eventModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeEventModal">&times;</span>
+            <div class="modal-body" id="eventModalBody">
+                <!-- Event details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JPCS</h3>
+                    <p>Junior Philippine Computer Society - Building tomorrow's tech leaders today.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="membership.html">Join Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">📘</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">🐦</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Junior Philippine Computer Society. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/events.js"></script>
+</body>
+</html>

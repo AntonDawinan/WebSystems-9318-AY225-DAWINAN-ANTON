@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Officers & Members - JPCS</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/officers.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">💻</span>
+                <span class="brand-name">JPCS</span>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="officers.html" class="active">Officers</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="membership.html">Join Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Team</h1>
+            <p>Meet the passionate individuals leading JPCS</p>
+        </div>
+    </section>
+
+    <section class="officers-section">
+        <div class="container">
+            <h2 class="section-title">Executive Officers</h2>
+            <div class="officers-grid" id="executiveOfficers">
+                <!-- Officers will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <section class="members-section">
+        <div class="container">
+            <h2 class="section-title">Committee Heads</h2>
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-committee="all">All</button>
+                <button class="filter-btn" data-committee="technical">Technical</button>
+                <button class="filter-btn" data-committee="events">Events</button>
+                <button class="filter-btn" data-committee="marketing">Marketing</button>
+                <button class="filter-btn" data-committee="finance">Finance</button>
+            </div>
+            <div class="members-grid" id="committeeMembers">
+                <!-- Members will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Modal -->
+    <div class="modal" id="profileModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Profile details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JPCS</h3>
+                    <p>Junior Philippine Computer Society - Building tomorrow's tech leaders today.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="membership.html">Join Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">📘</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">🐦</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Junior Philippine Computer Society. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/officers.js"></script>
+</body>
+</html>
